@@ -1,0 +1,4 @@
+Estamso aprendiendo Python
+Ya vamos por la unidad 4
+Emezamos por los archivos de texto
+Y continuaremos por as bases de datos
