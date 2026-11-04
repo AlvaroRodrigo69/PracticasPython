@@ -8,6 +8,7 @@ try:
     )
     cursor=conexion.cursor()
     cursor.execute("create database ordenadores")
+    conexion.commit()
     conexion.close()
 except mysql.connector.Error as e:
     print(f"se a producido un error: {e}")
@@ -25,7 +26,9 @@ try:
     cursor.execute(sql)
     sql2='''create table empleados(id int auto_increment primary key, nombre varchar(255), puesto varchar(100))'''
     cursor.execute(sql2)
-    sql3='''alter table clientes()'''
+    sql3='''alter table clientes add column id int auto_increment primary key'''
+    cursor.execute(sql3)
+    conexion.commit()
     conexion.close()
 except mysql.connector.Error as e:
     print(f"se a producido un error: {e}")

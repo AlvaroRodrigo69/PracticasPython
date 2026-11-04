@@ -1,0 +1,6 @@
+fichero=open("./reino_python/Bloque1/ficheros/diario.txt", "rt", encoding="utf-8")
+linea=fichero.readline()
+print(linea)
+linea=fichero.readline()
+print(linea)
+fichero.close()

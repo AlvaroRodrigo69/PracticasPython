@@ -1,0 +1,4 @@
+Nombre: Aria Vientoalto
+Clase: Exploradora
+Nivel: 3
+Vida: 42
